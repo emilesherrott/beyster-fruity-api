@@ -1,7 +1,6 @@
 const Fruit = require("../models/Fruit")
 
 const index = async (req, res) => {
-  console.log("hit")
   try {
     const fruits = await Fruit.showAll()
     res.status(200).send(fruits)
